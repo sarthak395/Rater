@@ -6,20 +6,31 @@
         <title> AVAILABILITY OF FACILITIES </title>
         style 
             include ../css/main.css
-        script(src="/js/main.js") 
     </head>
     <body>
         <nav>
             <ul id="navlist">
-                <li>Home</li>
-                <li>Login</li>
-                <li>Hall of Fame</li>
-                <li>Contact</li>
+                <li> <a href="main.pug">Home</li>
+                <li><a>Login</a></li>
+                <li><a>Hall of Fame</a></li>
+                <li><a href="">Contact</a> </li>
             </ul>
             img(src="https://assets-global.website-files.com/5eff9c5e4dba181f8aa2d1e0/614dfaed9cdcb08628f3b1cc_5-star-rating.jpeg")
         </nav>
         <section id="welcome">
-            h1#header RATE YOUR PEEPS
+            h1#header 
         </section>
+        <section id="options">
+            <div class="container">
+                <div class="butt" id="Electives"><button onclick="ele()">Electives</button></div>
+                <div class="butt" id="food"><button onclick="foo()">Food</button></div>
+                <div class="butt" id="Advisers"><button onclick="advis()">Advisers / Labs</button></div>
+            </div>
+        </section>
+        <footer>
+            <h2>Copyrights by @TheBoyz</h2>
+        </footer> 
     </body>
+    script
+            include ../js/script.js
 </html>

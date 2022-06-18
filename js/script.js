@@ -1,8 +1,9 @@
 console.log("hello")
 var text_array=[]
-text_array = [" Be judgy", " Be honest ", " Be helpful ", " Don't blindly follow ", " Think !!  " , " BE A rateR!!"]
+text_array = [" Be judgy", " Be honest ", " Be helpful ", " BE A rateR!!"]
 var array_index = 0;
 var count=0;
+
 
 function typewrite()
 {

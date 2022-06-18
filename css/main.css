@@ -6,7 +6,7 @@
     padding: 0px;
 }
 nav{
-    background-color: red;
+    background-color: burlywood;
     height: 9%;
     text-align: center;
     padding: 2%;
@@ -44,3 +44,75 @@ img{
     background-size: 100% 100%;
     height: 70%;
 }
+
+a{
+    text-decoration: none;
+    text-shadow: -1px 0 rgb(129, 21, 21), 0 1px black, 1px 0 black, 0 -1px rgb(0, 0, 0);
+    color:rgb(142, 54, 22)
+}
+a:hover{
+    transform: rotate(-15deg);
+    float: left;
+}
+
+.container
+{
+    background-color: aqua;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+#options
+{
+    height: 50%;
+}
+.butt{
+    margin: 0px;
+    width: 40%;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#electives{
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/13/24/81/1000_F_113248142_ZXpy7TSV3LOtsitCsQx2jr4QjjDH0F4P.jpg");
+}
+
+#food{
+    background-image: url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+#advisers{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9pXP7eVnHSR6TLq0i7mKy47H8s2hXea_nA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button{
+    color: red;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    height: 69px;
+    width: 126px;
+    border: 1px solid blanchedalmond;
+    border-radius: 20px;
+    background-color: orange;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    cursor: grab;
+}
+footer
+{
+    height: 10%;
+    text-align: center;
+    background-color: cornflowerblue;
+    margin: 0px;
+    padding: 20px;
+}
+
+
