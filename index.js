@@ -8,20 +8,20 @@ const server='127.0.0.1'
 
 app.use(bodyParser.urlencoded())
 
-app.set('views',path.join(__dirname,'views'));
-app.set('view engine','pug')
+app.use(express.static(__dirname + '/'));
 
+app.set('views',path.join(__dirname,'views'));
 
 app.get('/',(req,res)=>{
-    res.status(200).render('main')
+    res.status(200).sendFile(path.join(__dirname+'/views/main.html'))
 })
 
 app.get('/electives',(req,res)=>{
-    res.status(200).render('electives')
+    res.status(200).sendFile(path.join(__dirname+'/views/electives.html'))
 })
 
 app.get('/food',(req,res)=>{
-    res.status(200).render('food')
+    res.status(200).sendFile(path.join(__dirname+'/views/food.html'))
 })
 
 app.get('/advisers',(req,res)=>{
