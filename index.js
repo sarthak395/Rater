@@ -16,6 +16,18 @@ app.get('/',(req,res)=>{
     res.status(200).render('main')
 })
 
+app.get('/electives',(req,res)=>{
+    res.send("This is my Electives page")
+})
+
+app.get('/food',(req,res)=>{
+    res.send("This is food page")
+})
+
+app.get('/advisers',(req,res)=>{
+    res.send("This is advice page")
+})
+
 app.listen(port,()=>{
     console.log(`Successfully run at http://${server}:${port}`);
 })
