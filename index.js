@@ -17,11 +17,11 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/electives',(req,res)=>{
-    res.send("This is my Electives page")
+    res.status(200).render('electives')
 })
 
 app.get('/food',(req,res)=>{
-    res.send("This is food page")
+    res.status(200).render('food')
 })
 
 app.get('/advisers',(req,res)=>{
