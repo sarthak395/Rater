@@ -1,5 +1,5 @@
-# BetTer
-A betting website where you can come and enjoy the flavour of betting with your friends and colleagues, trusts will be broken but don't worry, you will be rich at the end or maybe not !!!! 
+# RateR
+A website which will help you in choosing electives and advisors through the ratings and feedback of your seniors.
 
 Tech Stack:
 
