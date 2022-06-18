@@ -1,0 +1,25 @@
+*{
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: red;
+    height: 9%;
+    text-align: center;
+    padding: 2%;
+}
+#navlist{
+    display: inline-flex;
+    flex-direction: row;
+}
+ul{
+    display: inline-flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    margin-left: 35px;
+    font-size: 25px;
+}
