@@ -1,5 +1,5 @@
-#dropdown
-{
-    display: inline-flex;
-    flex-direction: row;
+
+.con{
+    position: absolute;
+    display: none;
 }

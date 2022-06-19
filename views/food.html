@@ -1,29 +1,112 @@
-<html>
-
-<head>
+<html> 
+    <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title> Food Review </title>
-    <link href="../css/food.css"> 
-</head>
-
-<body>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title> Food Review </title>
+        <link rel="stylesheet" href="../css/food.css">
+        <script src="../js/food.js" defer></script>
+    </head>
+    <body>
     <label for="Canteens/Mess" id="label">Choose a Canteen or a Mess:</label>
-    <form>
-        <select name="Canteen/Mess" id="Canteens/Mess">
-            <option value="V.C.">Vindhya Canteen</option>
-            <option value="J.C">Juice Canteen</option>
-            <option value="B.B.C">Basketball Cantenn</option>
-            <option value="Tantra_Canteen">Tantra Canteen</option>
-            <option value="N.M.">North Mess</option>
-            <option value="S.M.">South Mess</option>
-            <option value="K.M.">Kadamb Mess</option>
-            <option value="Y.M.">Yuktahar Mess</option>
-        </select>
-        <button onclick="value()">Submit </button> 
-    </form>
-</body>
-<script src="../js/food.js"></script>
+    <select name="Canteen/Mess" id="Canteens/Mess">
+    <option value ="VC">Vindhya Canteen</option>
+    <option value = "JC">Juice Canteen</option>
+    <option value= "BBC">Basketball Cantenn</option>
+    <option value="Tantra_Canteen">Tantra Canteen</option>
+    <option value="NM">North Mess</option>
+    <option value="SM">South Mess</option>
+    <option value="KM">Kadamb Mess</option>
+    <option value="YM">Yuktahar Mess</option>
+    </select>
+    <button id='subbtn'>Submit</button>
+    
+    <div class="con" id="VC">
+        <h2>Following are the list of top 5 items in V.C. Vote for your favorite item</h2>
+        <ol>
+          <li> Double Chocolate Shake </li>
+          <li> Egg Omelete </li>
+          <li> Chicken Burger</li>
+          <li> Cheese Potato</li>
+          <li> Iced Tea</li>
+        </ol>
+    </div>
 
+    <div class="con" id="JC">
+        <h2>Following are the list of top 5 items in J.C. Vote for your favorite item</h2>
+        <ol>
+          <li> Oreo Chocolate Coffee </li>
+          <li> Lemon Soda </li>
+          <li> Watermelon Shake </li>
+          <li> Avocado with Honey </li>
+          <li> Banana Horlicks </li>
+        </ol>
+    </div>
+
+    <div class="con" id="BBC">
+        <h2>Following are the list of top 5 items in B.B.C. Vote for your favorite item</h2>
+        <ol>
+          <li> Mango Shake </li>
+          <li> Masala Dosa </li>
+          <li> Paneer Dosa </li>
+          <li> Extra Masala Maggi </li>
+          <li> Cheese Maggi </li>
+        </ol>
+    </div>
+
+    <div class="con" id="Tantra_Canteen">
+        <h2>Following are the list of top 5 items in Tantra Canteen. Vote for your favorite item</h2>
+        <ol>
+          <li> Blueberry Goli Soda </li>
+          <li> Chicken Garlic Noodles </li>
+          <li> Veg Manchurian Fried Rice </li>
+          <li> Fries </li>
+          <li> Chilli potato </li>
+        </ol>
+    </div>
+
+    <div class="con" id="NM">
+        <h2>Following are the list of top 5 items in North Mess. Vote for your favorite item</h2>
+        <ol>
+          <li> Monday Lunch </li>
+          <li> Tuesday Dinner </li>
+          <li> Thursday Lunch </li>
+          <li> Friday Dinner </li>
+          <li> Sunday Dinner </li>
+        </ol>
+    </div>
+
+    <div class="con" id="SM">
+        <h2>Following are the list of top 5 items in South Mess. Vote for your favorite item</h2>
+        <ol>
+          <li> Monday Dinner </li>
+          <li> Tuesday Dinner </li>
+          <li> Wednesday Dinner </li>
+          <li> Friday Dinner </li>
+          <li> Saturday Lunch </li>
+        </ol>
+    </div>
+
+    <div class="con" id="KM">
+        <h2>Following are the list of top 5 items in Kadamb Mess Vote for your favorite item</h2>
+        <ol>
+          <li> Monday Dinner </li>
+          <li> Tuesday Dinner </li>
+          <li> Wednesday Lunch </li>
+          <li> Saturday Dinner </li>
+          <li> Sunday Lunch </li>
+        </ol>
+    </div>
+
+    <div class="con" id="YM">
+        <h2>Following are the list of top 5 items in Yuktahar Mess. Vote for your favorite item</h2>
+        <ol>
+          <li> Thursday Lunch </li>
+          <li> Sunday Dinner </li>
+          <li> Wednesday Lunch </li>
+          <li> Tuesday Dinner </li>
+          <li> Monday Lunch </li>
+        </ol>
+    </div>
+    </body>
 </html>
