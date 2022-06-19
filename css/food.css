@@ -23,11 +23,18 @@ body {
 button {
     border: none;
     background-color: black;
-    color: #fefdff;
+    color: #c594f7;
+    text-shadow: 0px 0px 10px #c594f7;
+    font-size: 2rem;
+}
+ol
+{
+    color :none;
 }
 li
 {
     color: aqua;
+    font-size: 1.5rem;
     text-shadow: 0px 0px 10px rgba(171, 252, 248, 0.836);
 }
 h3{
@@ -36,4 +43,18 @@ h3{
 input 
 {
     background-color: #fefdff;
+}
+.Rating
+{
+    color: rgb(250, 199, 133);
+    text-shadow: 0px 0px 10px  rgba(245, 207, 157, 0.822) ;
+    font-weight: bold;
+
+}
+.review
+{
+    color:#f494f7;
+    text-shadow: 0px 0px 10px  #fcb0ffea;
+    font-weight: bold;
+
 }
