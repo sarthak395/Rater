@@ -3,7 +3,7 @@ const bodyParser=require('body-parser')
 const path=require('path')
 const app=express()
 
-const port=80
+const port=82
 const server='127.0.0.1'
 
 app.use(bodyParser.urlencoded())
