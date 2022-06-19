@@ -5,12 +5,12 @@ var Programme_var="1";
 let courses_year_sem_prog=[]
 
 let courses = [
-    {Year: "1", Semester: "1" , Programme: "1", Course_name: "A" },
-    {Year: "3", Semester: "2" , Programme: "1", Course_name: "B"},
-    {Year: "4", Semester: "2" , Programme: "3", Course_name: "C"},
-    {Year: "2", Semester: "1" , Programme: "7", Course_name: "D"},
-    {Year: "4", Semester: "2" , Programme: "3", Course_name: "E"},
-    {Year: "5", Semester: "2" , Programme: "2", Course_name: "F"}
+    {Year: "1", Semester: "1" , Programme: "1", Course_name: "Computer Programming" },
+    {Year: "3", Semester: "2" , Programme: "1", Course_name: "Compilers"},
+    {Year: "4", Semester: "2" , Programme: "3", Course_name: "Computer Systems and Organisation"},
+    {Year: "2", Semester: "1" , Programme: "7", Course_name: "Introduction to Software Systems"},
+    {Year: "4", Semester: "2" , Programme: "3", Course_name: "Data Structures and Algorithms"},
+    {Year: "5", Semester: "2" , Programme: "2", Course_name: "Linear Algebra"}
 ];
 
 function Year(event){

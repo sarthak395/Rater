@@ -1,0 +1,20 @@
+body
+{
+    
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/13/24/81/1000_F_113248142_ZXpy7TSV3LOtsitCsQx2jr4QjjDH0F4P.jpg");
+    background-color: black;
+    font-size: xx-large;
+    font-family: 'Dancing Script';
+    text-align: center;
+    color:white;
+    backdrop-filter: blur(6px);
+}
+
+
+#list { 
+	display: inline-block; 
+	text-align: left; 
+}
+li{
+    list-style: none;
+}
