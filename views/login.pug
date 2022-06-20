@@ -1,0 +1,11 @@
+head
+  title Login form
+  link(rel='stylesheet' href='../css/login.css')
+h2 Login
+form(name='loginform' action='/login' method='post')
+  h3 Username
+  input#usr_name.input(type='text' name='usr_name' placeholder='Enter username')
+  h3 Password
+  input#password.input(type='password' name='password' placeholder='Enter password')
+  br
+  input.submit(type='submit' value='Login')
