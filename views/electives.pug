@@ -1,0 +1,40 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width' ,='' initial-scale='1.0')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+  title  COURSES REVIEW 
+  link(rel='stylesheet' href='../css/electives.css')
+  script(src='../js/electives.js' defer='')
+br
+label(for='Year') Choose Year 
+select#Year(name='Year' onchange='Year(this)' onload='Year(this)')
+  option(value='1') First Year
+  option(value='2') Second Year
+  option(value='3') Third Year
+  option(value='4') Fourth Year
+  option(value='5') Fifth Year
+br
+br
+label(for='Semester') Choose Semester
+select#Semester(name='Semester' onchange='Semester(this)' onload='Semester(this)')
+  option(value='Spring') Spring
+  option(value='Monsoon') Monsoon
+br
+br
+label(for='Programme') Choose Programme
+select#Programme(name='Programme' onchange='Programme(this)' onload='Programme(this)')
+  option(value='CSE') CSE
+  option(value='CSD') CSD
+  option(value='CLD') CLD
+  option(value='CND') CND
+  option(value='CHD') CHD
+  option(value='ECE') ECE
+  option(value='ECD') ECD
+button#btn Submit
+br
+br
+p1 The courses with following parameters are:
+br
+ol#list
+  each val in list 
+    li= val.Course_name 
