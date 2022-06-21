@@ -37,4 +37,10 @@ p1 The courses with following parameters are:
 br
 ol#list
   each val in list 
-    li= val.Course_name 
+    li 
+      h3 #{val.Course_name} 
+      p Rated #{val.Rating} 
+      form(action=`/electives/${val.id}` method='post') 
+        span 
+          input(type="number" name="rating" min='0' max='5' placeholder="Wanna Rate ??")
+        input(type='submit' value='Rate')

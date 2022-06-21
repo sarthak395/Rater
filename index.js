@@ -8,7 +8,7 @@ const { METHODS } = require('http');
 
 //GLOBAL STUFF
 var username_ = "";
-var loggedinflag=0;
+var loggedinflag = 0;
 
 //CONNECTING TO MONGODB
 mongoose.connect('mongodb://localhost:27017/test')
@@ -20,7 +20,8 @@ const CourseSchema = new mongoose.Schema({
     Year: Number,
     Semester: String,
     Programme: String,
-    Course_name: String
+    Course_name: String,
+    Rating: Number
 });
 
 const userschema = new mongoose.Schema({
@@ -45,7 +46,7 @@ app.set('view engine', 'pug')
 
 //BACKEND ROUTES
 app.get('/', (req, res) => {
-    username_=username_.charAt(0).toUpperCase()+username_.slice(1)
+    username_ = username_.charAt(0).toUpperCase() + username_.slice(1)
     res.status(200).render('main', { username: username_ })
 })
 app.get('/electives', (req, res) => {
@@ -56,8 +57,22 @@ app.post('/electives', (req, res) => {
     course.find({ Year: `${data.Year}`, Semester: `${data.Semester}`, Programme: `${data.Programme}` }, function (err, courses) {
         res.status(200).render('electives', { list: courses })
     })
-
 })
+app.post('/electives/:id', (req, res) => {
+    res.redirect(`/electives/${req.params.id}/${req.body.rating}`)
+})
+app.get('/electives/:id/:rating', (req, res) => {
+    //we have coursename and it's ratings
+    
+    course.findOne({ _id: req.params.id },function(err,doc){
+        newrating = (doc.Rating+req.params.rating)%6
+        doc.Rating=newrating
+        doc.save()
+        res.send("Thanks for Voting Your Vote doesnt count")
+    });
+})
+
+
 app.get('/food', (req, res) => {
     res.status(200).render('food')
 })
@@ -76,8 +91,8 @@ app.post('/login', (req, res) => {
         if (actualpass != enterpass)
             res.status(200).send("Wrong Password")
         else {
-            loggedinflag=1;
-            username_=info[0].FullName
+            loggedinflag = 1;
+            username_ = info[0].FullName
             res.status(200).redirect('/')
         }
     });
@@ -91,6 +106,8 @@ app.post('/signup', (req, res) => {
     tempuser.save()
     res.status(301).redirect('/login')
 })
+
+
 
 //LISTENING TO PORT
 app.listen(port, () => {
