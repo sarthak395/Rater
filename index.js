@@ -49,8 +49,15 @@ app.get('/', (req, res) => {
     username_ = username_.charAt(0).toUpperCase() + username_.slice(1)
     res.status(200).render('main', { username: username_ })
 })
+app.get('/logout',(req,res)=>{
+    username_=""
+    res.status(302).redirect('/')
+})
 app.get('/electives', (req, res) => {
-    res.status(200).render('electives', { list: '' })
+    if(username_=="")
+        res.status(301).redirect('/login')
+    else
+        res.status(200).render('electives', { list: '' })
 })
 app.post('/electives', (req, res) => {
     var data = req.body
@@ -74,7 +81,10 @@ app.get('/electives/:id/:rating', (req, res) => {
 
 
 app.get('/food', (req, res) => {
-    res.status(200).render('food')
+    if(username_=="")
+        res.status(301).redirect('/login')
+    else
+        res.status(200).render('food')
 })
 app.get('/advisers', (req, res) => {
     res.send("This is advice page")
@@ -89,7 +99,7 @@ app.post('/login', (req, res) => {
     user.find({ Username: `${data.usr_name}` }, function (err, info) {
         const actualpass = info[0].Password;
         if (actualpass != enterpass)
-            res.status(200).send("Wrong Password")
+            res.status(200).render('login',{warning:"Wrong Password"})
         else {
             loggedinflag = 1;
             username_ = info[0].FullName

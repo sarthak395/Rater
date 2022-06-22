@@ -44,3 +44,9 @@ function delete_func()
 }
 
 typewrite()
+
+document.getElementById('name').addEventListener('click',()=>{
+    var co=confirm(" Are You Sure You Wanna Logout ?? ")
+    if(co)
+        window.location.href='/logout'
+})

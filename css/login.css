@@ -40,3 +40,8 @@ input.submit {
     /* padding: 1%; */
     font-size: 15px;
 }
+p#warn {
+    color: red;
+    font-size: 27px;
+    margin-left: 20px;
+}
